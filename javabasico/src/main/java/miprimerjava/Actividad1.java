@@ -2,7 +2,7 @@ package miprimerjava;
 
 import java.util.Scanner;
 
-public class actividad1 {
+public class Actividad1 {
     public static void main(String[] args) {
         /*Programa para sumar dos números leídos por teclado y escribir el resultado.
         - Que el programa nos pregunte el nombre.

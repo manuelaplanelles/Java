@@ -13,12 +13,15 @@ public class Ejercicio2 {
         int tarifa = teclado.nextInt();
 
         int salario = horas * tarifa;
+        System.out.println(salario);
         double salarioExtra=0;
         if (horas >= 40){
            int horasExtras = horas - 40;
-           salarioExtra = (horasExtras * 1.5);
+           salarioExtra = (horasExtras * (0.5*tarifa));
+           System.out.println(salarioExtra + " " + horasExtras);
         }
+        double salarioTotal = salarioExtra + salario;
 
-        System.out.println("Salario: " + salarioExtra + salario + ".");
+        System.out.println("Salario: " + salarioTotal + ".");
     }
 }

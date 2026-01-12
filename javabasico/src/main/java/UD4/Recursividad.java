@@ -141,5 +141,12 @@ public class Recursividad {
             }
         }
     }
+    public static String decimalABinario(int numero) {
+        if (numero == 0 || numero == 1){
+            return Integer.toString(numero);
+        }else{
+            return decimalABinario(numero/2)+numero%2;
+        }
+    }
 
 

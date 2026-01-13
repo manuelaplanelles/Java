@@ -1,6 +1,9 @@
 package UD4;
 
 public class EjercicioRecursividad3 {
+    public static void main(String[] args) {
+
+    }
     public static String invertirNumero(int numero) {
         String texto = String.valueOf(numero);
         char[] caracteres = texto.toCharArray();

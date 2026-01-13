@@ -1,6 +1,9 @@
 package UD4;
 
 public class EjercicioRecursividad4 {
+    public static void main(String[] args) {
+
+    }
     public static boolean esBinario(int numero) {
         String numeroTexto = String.valueOf(numero);
 

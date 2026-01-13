@@ -1,6 +1,9 @@
 package UD4;
 
 public class EjercicioRecursividad5 {
+    public static void main(String[] args) {
+
+    }
     public static String decimalABinario(int n) {
         if (n == 0) {
             return "0";

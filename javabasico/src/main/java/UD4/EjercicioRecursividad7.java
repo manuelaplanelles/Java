@@ -1,6 +1,9 @@
 package UD4;
 
 public class EjercicioRecursividad7 {
+    public static void main(String[] args) {
+
+    }
     public static int sumaHastaN(int n) {
         int suma = 0;
         String cadena = "";

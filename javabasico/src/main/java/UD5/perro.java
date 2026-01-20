@@ -1,7 +1,7 @@
 package UD5;
 
 public class perro {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
    {
         private String raza;
 
@@ -74,5 +74,5 @@ public class perro {
             this.color = color;
         }
 
-
-    }
+    */
+}

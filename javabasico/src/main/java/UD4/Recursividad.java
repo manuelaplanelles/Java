@@ -1,4 +1,4 @@
-package UD4
+/*package UD4
 
 
 
@@ -256,4 +256,4 @@ fun esBinario(numero: Int): Boolean {
 
         }
 
-    }
+ */

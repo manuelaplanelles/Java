@@ -1,4 +1,4 @@
-package UD5;
+package u05_poo;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package UD5;
+package u05_poo;
 
 public class cliente {
     private int id;

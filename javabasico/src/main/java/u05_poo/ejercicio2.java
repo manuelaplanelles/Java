@@ -1,4 +1,4 @@
-package UD5;
+package u05_poo;
 
 public class ejercicio2 {
     /*Añade cuatro métodos a la clase Persona para realizar las siguientes acciones:

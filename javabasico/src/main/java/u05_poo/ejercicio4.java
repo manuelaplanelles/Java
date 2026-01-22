@@ -1,4 +1,4 @@
-package UD5;
+package u05_poo;
 
 public class ejercicio4 {
     /*Abre tu proyecto creado recientemente y reemplaza en todas las Clases los métodos de tipo mostrarInfo()

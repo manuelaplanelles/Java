@@ -1,4 +1,4 @@
-package UD4;
+package u04_modular;
 
 import java.util.Scanner;
 

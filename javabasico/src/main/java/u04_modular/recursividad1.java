@@ -1,4 +1,4 @@
-package UD4;
+package u04_modular;
 
 public class recursividad1 {
     public static void tri(int contB, int contA, int n) {

@@ -1,155 +1,61 @@
-/*package UD4
+package u04_modular;
 
+public class Recursividad {
 
+        static int limite = 10;
+        static String frase = "Hola soy una frase al reves";
+        static char[] frase_char = frase.toCharArray();
 
-<<<<<<< HEAD
-internal object {
-fun decimalABinario(numero: Int): String {
-    if (numero == 0 || numero == 1) {
-        return numero.toString()
-    } else {
-        return UD4..decimalABinario(numero / 2) + numero % 2
-    }
-}
-=======
-    public static void main(String[] args) {
->>>>>>> 9791b6d8a76edf04667e9fe72a4828427fb97c6c
+        static void main() {
 
-object Recursividad {
-var limite: Int = 10
-var frase: String = "Hola soy una frase al reves"
-var frase_char: CharArray = frase.toCharArray()
+            System.gc(); //Limpia lo que pueda antes de medir
 
-fun main() {
-    System.gc() //Limpia lo que pueda antes de medir
+            long inicioEjecucion = System.nanoTime();
+            long memoriaAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
-    var inicioEjecucion = System.nanoTime()
-    var memoriaAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()
+            // PROGRAMA A REALIZAR
+            imprimir(1);
 
-    // PROGRAMA A REALIZAR
-    imprimir(1)
+            long finEjecucion = System.nanoTime();
+            long memoriaDespues = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
-    var finEjecucion = System.nanoTime()
-    var memoriaDespues = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()
+            System.out.println("Tiempo recursivo: " + (finEjecucion - inicioEjecucion) + " ns");
+            System.out.println("Memoria consumida recursivo: " + (memoriaDespues - memoriaAntes) + " bytes");
 
-    println("Tiempo recursivo: " + (finEjecucion - inicioEjecucion) + " ns")
-    println("Memoria consumida recursivo: " + (memoriaDespues - memoriaAntes) + " bytes")
+            inicioEjecucion = System.nanoTime();
+            memoriaAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
-    inicioEjecucion = System.nanoTime()
-    memoriaAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()
+            // PROGRAMA A REALIZAR
+            imprimir_bucle();
 
-    // PROGRAMA A REALIZAR
-    imprimir_bucle()
+            finEjecucion = System.nanoTime();
+            memoriaDespues = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
-    finEjecucion = System.nanoTime()
-    memoriaDespues = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()
+            System.out.println("Tiempo: " + (finEjecucion - inicioEjecucion) + " ns");
+            System.out.println("Memoria consumida: " + (memoriaDespues - memoriaAntes) + " bytes");
 
-    println("Tiempo: " + (finEjecucion - inicioEjecucion) + " ns")
-    println("Memoria consumida: " + (memoriaDespues - memoriaAntes) + " bytes")
+            //   System.out.println(suma(10));
 
-    //   System.out.println(suma(10));
-    println(digitos(537473))
+            System.out.println(digitos(537473));
 
-    println(potencia(2, 4))
+            System.out.println(potencia(2,4));
 
-    del_reves(38472)
+            del_reves(38472);
 
-    println()
+            System.out.println();
 
-    del_reves_char(frase_char.size - 1)
+            del_reves_char(frase_char.length-1);
 
-    println()
+            System.out.println();
 
-<<<<<<< HEAD
-    del_reves_char_sin_vector(frase.length - 1)
-    println(esBinario(18601))
-}
-=======
             del_reves_char_sin_vector(frase.length()-1);
 
             System.out.println();
             System.out.println(esBinario(5454));
 
             System.out.println(aBinario(4));
->>>>>>> 9791b6d8a76edf04667e9fe72a4828427fb97c6c
 
-fun imprimir(num: Int) {
-    if (num <= limite) {
-        println(num)
-        imprimir(num + 1)
-    }
-}
-
-fun imprimir_bucle() {
-    for (i in 1..10000) {
-        println(i)
-    }
-}
-
-fun suma(nums: Int): Int {
-    if (nums == 0) {
-        return 0
-    } else {
-        return nums + suma(nums - 1)
-    }
-}
-
-fun digitos(numero: Int): Int {
-    if (numero < 10) {
-        return 1
-    } else {
-        return 1 + digitos(numero / 10)
-    }
-}
-
-fun potencia(base: Int, exponente: Int): Int {
-    if (exponente == 0) {
-        return 1
-    } else {
-        return base * potencia(base, exponente - 1)
-    }
-}
-
-fun del_reves(numero: Int) {
-    if (numero < 10) {
-        print(numero)
-    } else {
-        print(numero % 10)
-        del_reves(numero / 10)
-    }
-}
-
-fun del_reves_char(posicion: Int) {
-    if (posicion >= 0) {
-        print(frase_char[posicion])
-        del_reves_char(posicion - 1)
-    }
-}
-
-fun del_reves_char_sin_vector(posicion: Int) {
-    if (posicion >= 0) {
-        print(frase.get(posicion))
-        del_reves_char(posicion - 1)
-    }
-}
-
-fun esBinario(numero: Int): Boolean {
-    if (numero > 9) {
-        if (numero % 10 != 0 && numero % 10 != 1) {
-            return false
-        } else {
-            return esBinario(numero / 10)
         }
-<<<<<<< HEAD
-    } else {
-        if (numero == 0 || numero == 1) {
-            return true
-        } else {
-            return false
-        }
-    }
-}
-=======
 
         public static void imprimir (int num){
 
@@ -244,7 +150,6 @@ fun esBinario(numero: Int): Boolean {
             }
 
         }
->>>>>>> 9791b6d8a76edf04667e9fe72a4828427fb97c6c
 
         public static String aBinario (int numero){
 
@@ -256,4 +161,4 @@ fun esBinario(numero: Int): Boolean {
 
         }
 
- */
+    }

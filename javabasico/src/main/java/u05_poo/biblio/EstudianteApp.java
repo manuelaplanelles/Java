@@ -2,41 +2,45 @@ package u05_poo.biblio;
 
 public class EstudianteApp {
 
-        static void main() {
+    static void main() {
 
-            Estudiante ivan = new Estudiante("Iván","1DAW","alumno@mutxamel.com");
+        Estudiante ivan = new Estudiante("Iván","1DAW","alumno@mutxamel.com");
 
-            System.out.println(ivan.getNia());
+        System.out.println(ivan.getNia());
 
-            Estudiante alejandro = new Estudiante("alejandro");
+        Estudiante alejandro = new Estudiante("alejandro");
 
-            System.out.println(alejandro.getNia());
+        System.out.println(alejandro.getNia());
 
-            System.out.println("Estudiantes creados: " + Estudiante.obtenerTotalEstudiantes());
+        System.out.println("Estudiantes creados: " + Estudiante.obtenerTotalEstudiantes());
 
-            System.out.println(Estudiante.validarCorreo("hola@iesmutxamel.com"));
-            System.out.println(Estudiante.validarCorreo("hola@alu.edu.gva.es"));
+        System.out.println(Estudiante.validarCorreo("hola@iesmutxamel.com"));
+        System.out.println(Estudiante.validarCorreo("hola@alu.edu.gva.es"));
 
-            Libro las_48_leyes = new Libro("Las 48 leyes del poder","Robert Greene");
+        Editorial anaya = new Editorial("ANAYA","España");
 
-            System.out.println(las_48_leyes);
+        Libro las_48_leyes = new Libro("Las 48 leyes del poder","Robert Greene", anaya);
 
-            Libro habitos_atomicos = new Libro("Hábitos atómicos","James Clear");
+        System.out.println(las_48_leyes);
 
-            System.out.println(habitos_atomicos);
+        Libro habitos_atomicos = new Libro("Hábitos atómicos","James Clear", anaya);
 
-            las_48_leyes.prestar(ivan);
+        System.out.println(habitos_atomicos);
 
-            System.out.println(las_48_leyes.estaDisponible());
-            System.out.println(ivan);
+        las_48_leyes.prestar(ivan);
 
-            System.out.println("Total libros creados: " + Libro.getCantidadLibros());
-            System.out.println("Libros disponibles: " + Libro.getLibrosDisponibles());
+        System.out.println(las_48_leyes.estaDisponible());
+        System.out.println(ivan);
 
-            las_48_leyes.devolver();
-            las_48_leyes.devolver();
-            System.out.println(las_48_leyes.estaDisponible());
+        habitos_atomicos.prestar(ivan);
+
+        System.out.println("Total libros creados: " + Libro.getCantidadLibros());
+        System.out.println("Libros disponibles: " + Libro.getLibrosDisponibles());
+
+        las_48_leyes.devolver();
+        las_48_leyes.devolver();
+        System.out.println(las_48_leyes.estaDisponible());
 
 
-        }
     }
+}

@@ -3,16 +3,17 @@ package u05_poo.biblio;
 import java.time.LocalDateTime;
 
 public class Prestamo {
+
     private Estudiante estudiante;
-    private Libro Libro;
+    private Libro libro;
     private LocalDateTime fecha;
 
     public Prestamo (Estudiante estudiante, Libro libro){
         fecha = LocalDateTime.now();
         this.estudiante=estudiante;
-        this.Libro=libro;
+        this.libro=libro;
     }
-    
+
     public Estudiante getEstudiante() {
         return estudiante;
     }
@@ -22,11 +23,11 @@ public class Prestamo {
     }
 
     public Libro getLibro() {
-        return Libro;
+        return libro;
     }
 
     public void setLibro(Libro libro) {
-        Libro = libro;
+        this.libro = libro;
     }
 
     public LocalDateTime getFecha() {
@@ -41,8 +42,11 @@ public class Prestamo {
     public String toString() {
         return "Prestamo{" +
                 "estudiante=" + estudiante +
-                ", Libro=" + Libro +
+                ", libro=" + libro +
                 ", fecha=" + fecha +
                 '}';
     }
+
+
+
 }

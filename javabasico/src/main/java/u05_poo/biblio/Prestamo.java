@@ -12,7 +12,7 @@ public class Prestamo {
         this.estudiante=estudiante;
         this.Libro=libro;
     }
-    
+
     public Estudiante getEstudiante() {
         return estudiante;
     }

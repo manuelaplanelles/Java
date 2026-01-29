@@ -1,13 +1,13 @@
-package u05_poo.biblio;
+package u05_poo.Imserso;
 
-public class Editorial {
+public class Abuelo {
 
     private String nombre;
-    private String pais;
+    private int edad;
 
-    public Editorial (String nombre, String pais){
+    public Abuelo (String nombre, int edad){
         this.nombre=nombre;
-        this.pais=pais;
+        this.edad=edad;
     }
 
     public String getNombre() {
@@ -18,23 +18,21 @@ public class Editorial {
         this.nombre = nombre;
     }
 
-    public String getPais() {
-        return pais;
+    public int getEdad() {
+        return edad;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
+
 
     @Override
     public String toString() {
-        return "Editorial{" +
+        return "Abuelo{" +
                 "nombre='" + nombre + '\'' +
-                ", pais='" + pais + '\'' +
+                ", edad=" + edad +
                 '}';
     }
-
-
-
 
 }

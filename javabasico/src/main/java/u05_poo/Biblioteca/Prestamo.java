@@ -1,4 +1,4 @@
-package u05_poo.biblio;
+package u05_poo.Biblioteca;
 
 import java.time.LocalDateTime;
 

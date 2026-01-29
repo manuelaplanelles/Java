@@ -1,4 +1,4 @@
-package practicas;
+package practicas.LaBasculaFerianteRabasa;
 
 import java.util.Scanner;
 

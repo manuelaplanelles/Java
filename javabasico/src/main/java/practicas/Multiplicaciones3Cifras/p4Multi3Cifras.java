@@ -1,4 +1,4 @@
-package practicas;
+package practicas.Multiplicaciones3Cifras;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

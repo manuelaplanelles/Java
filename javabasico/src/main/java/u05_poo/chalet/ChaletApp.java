@@ -16,8 +16,8 @@ package u05_poo.chalet;
             pisito.mostrarHabitaciones();
 
             System.out.println("La habitación más grande es " + pisito.getHabitacionMasGrande().getNombre());
-
-
+            pisito.getListaHabitaciones().get(0).crearElectrodomesticos("Nevera", 300);
+            pisito.getListaHabitaciones().get(0).mostrarElectrodomesticos();
 
 
         }

@@ -18,7 +18,16 @@ public class Habitacion {
 
     }
     public void mostrarElectrodomesticos(String nombre, int consumo){
-
+        for(Electrodomesticos electrodomesticos : listaElectrodomesticos){
+            System.out.println(getNombre());
+        }
+    }
+    public void calcularConsumo(int consumo){
+        double consumoTotal = 0;
+        for (Electrodomesticos electrodomesticos : listaElectrodomesticos){
+            consumoTotal += electrodomesticos.getConsumo();
+        }
+        return consumoTotal;
     }
 
 
@@ -45,8 +54,6 @@ public class Habitacion {
     public void setListaHelectrodomesticos(ArrayList<Electrodomesticos> listaHelectrodomesticos) {
         this.listaElectrodomesticos = listaHelectrodomesticos;
     }
-
-
 
     @Override
     public String toString() {

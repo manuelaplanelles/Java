@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Electrodomesticos {
     private String nombre;
-    private int consumo;
+    private double consumo;
 
     public Electrodomesticos(String nombre, int consumo){
         this.nombre=nombre;

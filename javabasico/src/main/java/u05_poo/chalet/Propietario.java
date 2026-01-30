@@ -17,7 +17,6 @@ public class Propietario {
         this.edad=edad;
     }
 
-
     public String getNombre() {
         return nombre;
     }

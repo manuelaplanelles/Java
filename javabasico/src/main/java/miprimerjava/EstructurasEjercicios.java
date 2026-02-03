@@ -1,5 +1,8 @@
 package miprimerjava;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class EstructurasEjercicios {
     /*
     Crea un Array con 5 valores e imprime su longitud.
@@ -14,6 +17,34 @@ public class EstructurasEjercicios {
     Dado un Array, transfórmalo en un ArrayList, a continuación en un HasthSet y finalmente en un HashMap con clave y valor iguales.
      */
     static void main() {
+
+        int[] num = {3, 5, 7, 10, 15};
+        System.out.println(num.length);
+
+        int[] vacio =new int[0];
+
+        ArrayList<String> nom =new ArrayList<String>();
+        System.out.println(nom.size());
+
+        nom.add("Manuela");
+        nom.add("Planelles");
+        nom.add("Lucas");
+        nom.add("Alicante");
+        System.out.println(nom);
+        System.out.println(nom.size());
+
+        nom.remove("Alicante");
+        System.out.println(nom);
+        System.out.println(nom.size());
+
+
+
+
+
+
+
+
+
 
     }
 }

@@ -40,5 +40,4 @@ public class Instituto {
             System.out.println("El curso ya existe en el instituto.");
         }
     }
-
 }

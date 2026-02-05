@@ -5,7 +5,6 @@ public class AppCurso {
 
                 Instituto instituto = new Instituto("IES MUTXAMEL");
 
-                //crear cursos
                 Curso cursoJava = new Curso("Java", 100);
                 Curso cursoPython = new Curso("Python", 70);
                 instituto.agregarCurso(cursoJava);

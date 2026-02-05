@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Instituto {
 
     @NonNull
-    private String nombre;
+    private final String nombre;
     @Setter
     private String poblacion;
 

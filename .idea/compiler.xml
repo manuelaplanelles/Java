@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1Daw" />
+        <module name="1DAW" />
       </profile>
     </annotationProcessing>
   </component>

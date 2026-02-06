@@ -85,7 +85,7 @@ public class Empleado {
                 "id='" + id + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", cargo='" + cargo + '\'' +
-                ", director=" + director +
+                ", director=" + directorInfo +
                 '}';
     }
 }

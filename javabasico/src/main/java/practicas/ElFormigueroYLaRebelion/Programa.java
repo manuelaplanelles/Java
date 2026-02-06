@@ -15,8 +15,6 @@ public class Programa {
         this.nombre = nombre;
         this.cadena = cadena;
         this.temporadas = 0;
-        this.listaInvitado = listaInvitado;
-        this.listaEmpleado = listaEmpleado;
 
         this.director = new Empleado(nombreDirector, "director", null);
         this.listaEmpleado.add(this.director);

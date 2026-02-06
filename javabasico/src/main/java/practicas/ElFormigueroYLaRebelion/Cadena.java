@@ -40,6 +40,11 @@ public class Cadena {
 
     @Override
     public String toString() {
-        return "Cadena: " + nombre + ", Programas: " + listaPrograma.size();
+        String resultado = "Cadena: " + nombre + "\n" +
+                "Programas: " + listaPrograma.size() + "\n";
+        for (Programa programa : listaPrograma) {
+            resultado += "  - " + programa.getNombre() + "\n";
+        }
+        return resultado;
     }
 }

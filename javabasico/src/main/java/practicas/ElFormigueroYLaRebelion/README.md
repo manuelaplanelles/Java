@@ -58,8 +58,8 @@ Creamos las clases que se solicitan con sus atributos.
 
 ![Clases y atributos](./img_doc/clases%20y%20atributos.jpg)
 
-Creamos los constructores, getters, setters y metodos:
-**Clase Empleado**
+
+#### Clase Empleado
 - Para generar el Id automático creamos la función .format para formatear el número con 3 digitos y un contador que va incrementando
 ```java
 private String generarId(){
@@ -253,6 +253,7 @@ Comentar el código siguiendo el estándar Javadoc.
 Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

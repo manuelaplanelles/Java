@@ -11,7 +11,7 @@ Manuela Planelles - 1º DAW - IES Mutxamel
 1. [Introducción](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#1-introducci%C3%B3n)
 2. [Objetivos de la práctica](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#2-objetivos-de-la-pr%C3%A1ctica)
 3. [Diseño e Implementación del programa.](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#3-dise%C3%B1o-e-implementaci%C3%B3n-del-programa)
-   - [3.1. Estructura de clases]()
+   - [3.1. Estructura de clases](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#31-estructura-de-clases)
      - [3.1.1. Clase `AppProgramas`](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#clase-appprogramas)
      - [3.1.4. Clase `Empleado`](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#clase-empleado)
      - [3.1.5. Clase `Invitado`]()
@@ -58,6 +58,7 @@ Creamos las clases que se solicitan con sus atributos.
 
 ![Clases y atributos](./img_doc/clases%20y%20atributos.jpg)
 
+---
 #### Clase AppProgramas
 Creamos la clase AppProgramas, unicamente con el main e iremos completandola para las pruebas.
 ```java
@@ -67,6 +68,8 @@ public class AppProgramas {
     }
 }
 ```
+---
+
 #### Clase Empleado
 - Para generar el Id automático creamos la función .format para formatear el número con 3 digitos y un contador que va incrementando
 ```java
@@ -261,6 +264,7 @@ Comentar el código siguiendo el estándar Javadoc.
 Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

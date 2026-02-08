@@ -11,7 +11,7 @@ Manuela Planelles - 1º DAW - IES Mutxamel
 1. [Introducción](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#1-introducci%C3%B3n)
 2. [Objetivos de la práctica](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#2-objetivos-de-la-pr%C3%A1ctica)
 3. [Diseño e Implementación del programa.](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#3-dise%C3%B1o-e-implementaci%C3%B3n-del-programa)
-   - [3.1. Estructura de clases](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#31-estructura-de-clases)
+   - [3.1. Estructura de clases]()
      - [3.1.1. Clase `AppProgramas`]()
      - [3.1.4. Clase `Empleado`]()
      - [3.1.5. Clase `Invitado`]()
@@ -114,7 +114,11 @@ private String generarId(){
                 '}';
     }
 ```
-[Comprobación 1.](https://github.com/manuelaplanelles/1Daw/edit/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#comprobamos--la-lista-de-empleados-un-empleado-no-puede-ser-director-y-si-no-es-ning%C3%BAn-de-los-valores-se-guarda-como-pte)
+
+[Comprobación 1.]()
+
+
+
 <details>
 <summary>Ver el código completo de la clase Empleado</summary>
 
@@ -243,11 +247,13 @@ Realiza las pruebas manuales necesarias para comprobar que el programa funciona 
 Pruebas unitarias de los método implementados con JUnit5.
 ---
 ## 7. Documentación Javadoc:
-** Comentar el código siguiendo el estándar Javadoc.
+Comentar el código siguiendo el estándar Javadoc.
 ---
-## 8. Diagrama UML:** Crear el diagrama UML con PlantUML.
+## 8. Diagrama UML:
+Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

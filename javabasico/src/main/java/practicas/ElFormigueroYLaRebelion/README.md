@@ -415,7 +415,7 @@ public class Programa {
     }
 ```
 - Para cumplir con lo que se indica:
-*“De forma que, si el día de mañana el programa "La rebelión" vuelve a su Cadena original, esta sigue manteniendo todas sus características y solamente necesitaremos modificar el valor del atributo cadena en la clase Programa y eliminar de la listaProgramas en la clase Cadena dicho programa."*
+> _“De forma que, si el día de mañana el programa "La rebelión" vuelve a su Cadena original, esta sigue manteniendo todas sus características y solamente necesitaremos modificar el valor del atributo cadena en la clase Programa y eliminar de la listaProgramas en la clase Cadena dicho programa."_
 
 Desde el método setCadena, generamos función if para eliminar la cadena anterior, asignamos la nueva cadena y otro if para añadir la nueva cadena.
 ```java
@@ -637,6 +637,7 @@ public class Programa {
 - Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

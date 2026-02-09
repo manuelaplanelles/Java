@@ -317,8 +317,10 @@ public class Invitado {
 ---
 ## 5. Ejemplo de funcionamiento
 
-##### Comprobamos  la lista de empleados, un empleado no puede ser director, y si no es ningún de los valores se guarda como pte
+##### Comprobamos la lista de empleados, un empleado no puede ser director, y si no es ningún de los valores se guarda como pte
   ![Clases y atributos](./img_doc/pruebas_empleado.jpg)
+##### Comprobamos que se crea sin problema Invitado
+  ![Clases y atributos](./img_doc/prueba_invitado.png)
 
 
 ---
@@ -337,6 +339,7 @@ Comentar el código siguiendo el estándar Javadoc.
 Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

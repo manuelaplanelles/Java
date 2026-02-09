@@ -297,7 +297,7 @@ public class Invitado {
 ```
 </details>
 
- [Comprobación 2.]()
+ [Comprobación 2.](https://github.com/manuelaplanelles/1Daw/blob/main/javabasico/src/main/java/practicas/ElFormigueroYLaRebelion/README.md#comprobamos-que-se-crea-sin-problema-invitado)
  
 ---
 
@@ -339,6 +339,7 @@ Comentar el código siguiendo el estándar Javadoc.
 Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

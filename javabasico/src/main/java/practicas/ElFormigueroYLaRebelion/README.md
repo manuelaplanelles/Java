@@ -410,7 +410,7 @@ public class Cadena {
   ![Prueba Invitado](./img_doc/prueba_invitado.png)
 
 ##### Comprobamos sobre la clase Cadena
-  ![Prueba Cadena]()
+  ![Prueba Cadena](./img_doc/pruebas_cadena.jpg)
 
 
 
@@ -430,6 +430,7 @@ Comentar el código siguiendo el estándar Javadoc.
 Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

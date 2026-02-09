@@ -301,6 +301,93 @@ public class Invitado {
  
 ---
 
+#### Clase Cadena
+- Creamos atributos, el constructor, los set, los get y toString.
+- Creamos método para gestionar la lista de programas, añade un programa (.add) si no es diferente a null y si no esta en la lista.
+```java
+ public void agregarPrograma(Programa programa) {
+        if (programa != null && !listaPrograma.contains(programa)) {
+            listaPrograma.add(programa);
+        }
+    }
+```
+- Otro método para eliminar un programa de la lista.
+```java
+ public void eliminarPrograma(Programa programa) {
+        listaPrograma.remove(programa);
+    }
+```
+- Se pide que se sobre escriba toString, para mostrar el nombre de la cadena, cuantos programas tiene y los nombres.
+```java
+   @Override
+    public String toString() {
+        String resultado = "Cadena: " + nombre + "\n" +
+                "Programas: " + listaPrograma.size() + "\n";
+        for (Programa programa : listaPrograma) {
+            resultado += "  - " + programa.getNombre() + "\n";
+        }
+        return resultado;
+    }
+```
+<details>
+<summary>Ver el código completo de la clase Empleado</summary>
+
+```java
+import java.util.ArrayList;
+
+public class Cadena {
+
+    private String nombre;
+    private ArrayList<Programa> listaPrograma;
+
+    public Cadena(String nombre) {
+        this.nombre = nombre;
+        this.listaPrograma = new ArrayList<>();
+    }
+    public void agregarPrograma(Programa programa) {
+        if (programa != null && !listaPrograma.contains(programa)) {
+            listaPrograma.add(programa);
+        }
+    }
+
+    public void eliminarPrograma(Programa programa) {
+        listaPrograma.remove(programa);
+    }
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public ArrayList<Programa> getListaPrograma() {
+        return listaPrograma;
+    }
+
+    public void setListaPrograma(ArrayList<Programa> listaPrograma) {
+        this.listaPrograma = listaPrograma;
+    }
+
+    @Override
+    public String toString() {
+        String resultado = "Cadena: " + nombre + "\n" +
+                "Programas: " + listaPrograma.size() + "\n";
+        for (Programa programa : listaPrograma) {
+            resultado += "  - " + programa.getNombre() + "\n";
+        }
+        return resultado;
+    }
+}
+
+```
+</details>
+
+ [Comprobación 3.]()
+
+
 ### 3.2. Métodos extras implementados
 
 
@@ -318,9 +405,13 @@ public class Invitado {
 ## 5. Ejemplo de funcionamiento
 
 ##### Comprobamos la lista de empleados, un empleado no puede ser director, y si no es ningún de los valores se guarda como pte
-  ![Clases y atributos](./img_doc/pruebas_empleado.jpg)
+  ![Prueba Empleado](./img_doc/pruebas_empleado.jpg)
 ##### Comprobamos que se crea sin problema Invitado
-  ![Clases y atributos](./img_doc/prueba_invitado.png)
+  ![Prueba Invitado](./img_doc/prueba_invitado.png)
+
+##### Comprobamos sobre la clase Cadena
+  ![Prueba Cadena]()
+
 
 
 ---
@@ -339,6 +430,7 @@ Comentar el código siguiendo el estándar Javadoc.
 Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

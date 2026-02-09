@@ -1008,12 +1008,24 @@ InvitadoTest
 
 ---
 ## 7. Documentación Javadoc:
-- Comentar el código siguiendo el estándar Javadoc.
+- Se comentan las 4 clases tanto en la cabecera como en los metodos usando las etiquetas:
+| Etiqueta | Uso | Ubicación |
+|----------|------|-------------|
+| `@author` | Nombre del autor | Clases |
+| `@version` | Versión del código | Clases |
+| `@param` | Descripción de parámetros | Constructores y métodos con parámetros |
+| `@return` | Descripción del valor devuelto | Métodos que no son void. |
+| `@see` | Referencias cruzadas a otros métodos/clases | Donde sea relevante |
+| `@Override` | Indica sobrescritura de método | Métodos toString() |
+
+![JavaDoc](./img_doc/JavaDoc.jpg)
+
 ---
 ## 8. Diagrama UML:
 - Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

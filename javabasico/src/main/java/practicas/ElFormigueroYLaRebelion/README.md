@@ -1009,6 +1009,7 @@ InvitadoTest
 ---
 ## 7. Documentación Javadoc:
 - Se comentan las 4 clases tanto en la cabecera como en los metodos usando las etiquetas:
+
 | Etiqueta | Uso | Ubicación |
 |----------|------|-------------|
 | `@author` | Nombre del autor | Clases |
@@ -1025,6 +1026,7 @@ InvitadoTest
 - Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

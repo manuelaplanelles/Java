@@ -616,6 +616,9 @@ public class Programa {
 ##### Comprobamos sobre la clase Cadena
   ![Prueba Cadena](./img_doc/pruebas_cadena.jpg)
 
+##### Comprobamos sobre la clase Programa, la gestion de los empleados
+  ![Prueba Programa](./img_doc/pruebas_programa.jpg)
+
 
 
 ---
@@ -634,6 +637,7 @@ Comentar el código siguiendo el estándar Javadoc.
 Crear el diagrama UML con PlantUML.
 
 ---
+
 
 
 

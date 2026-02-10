@@ -47,13 +47,12 @@ public class Usuario {
         this.seguidores = seguidores;
     }
 
-    @Override
-    public String toString() {
-        return "Usuario{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", nomUsuario='" + nomUsuario + '\'' +
-                ", seguidores=" + seguidores +
-                '}';
+
+    public void mostrarInfo() {
+        System.out.println("Informacion del Usuario:");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Nombre de usuario: " + nomUsuario);
+        System.out.println("Seguidores: " + seguidores);
     }
 }

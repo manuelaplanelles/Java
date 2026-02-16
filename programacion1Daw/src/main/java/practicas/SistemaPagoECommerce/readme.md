@@ -388,9 +388,183 @@ public boolean validarPayPal(double importe){
  [Comprobación](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#2-comprobamos-la-clase-paypal-creamos-dos-cuentas-una-sin-el-arroba-y-con-saldo-insuficiente-y-otra-con--y-saldo-suficiente)
 
 #### Clase `Bizum`
+
+>_"La clase Bizum tendrá los atributos telefono (String de 9 caracteres) y pin (int de 6 dígitos que se generará de forma aleatoria)."_
+
+Como se indica creamos los atributos, el constructor y los get, set y toString. Dentro del constructor usamos 'Random' para el pin.
 ```java
 
+import java.util.Random;
+
+class Bizum extends MetodoPago{
+    private String telefono;
+    private int pin;
+
+    public Bizum (String telefono){
+        super();
+        this.telefono=telefono;
+        Random random = new Random();
+        this.pin = random.nextInt(900000) + 100000;
+        System.out.println(pin);
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+    @Override
+    public String toString() {
+        return "Bizum{" +
+                "telefono='" + telefono + '\'' +
+                ", pin=" + pin +
+                '}';
+    }
+
+    @Override
+    public void procesarPago(double importe) {
+
+    }
+}
+
 ```
+>_"El método procesarPago() debe imprimir "Procesando pago de [importe] € con Bizum”._
+
+Talcual se hizo en la clase de tarjeta se sobre escribe el metodo del padre.
+
+```java
+@Override
+    public void procesarPago(double importe) {
+        System.out.println("Procesando pago de " + importe +  "€ con tarjeta de crédito Bizum");
+    }
+```
+
+>_"El método validarBizum() debe comprobar el formato del teléfono y que el pin introducido por el usuario es el correcto. NOTA: haz trampa e imprime el pin en cuanto se genere para poder ver cuál es y poder realizar el pago."
+
+La validacion del telefono es similar al de la tarjeta de credito y para el pin, usamos un if, comprobando que el pin introducido por teclado sea distinto del pin creado aleatoriamente. Y para las validaciones hacemos como el resto del clases con boolean.
+
+```java
+public boolean validarBizum() {
+        boolean valido = true;
+
+        if (!telefono.matches("\\d+")) {
+            System.out.println("Solo se admiten 9 números.");
+            valido = false;
+        }
+        if (telefono.length() != 9){
+            System.out.println("Solo se admiten 9 números.");
+            valido = false;
+        }
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Introduce tu PIN: ");
+        int pinIntroducido = teclado.nextInt();
+
+        if (pinIntroducido != this.pin){
+            System.out.println("El PIN introducido es incorrecto.");
+            valido = false;
+
+        }
+        if (valido){
+            System.out.println("Validando tarjeta...");
+        }
+
+        return valido;
+    }
+```
+
+<details>
+<summary>Ver el código completo de la clase PayPal</summary>
+
+```java
+import java.util.Random;
+import java.util.Scanner;
+
+class Bizum extends MetodoPago{
+    private String telefono;
+    private int pin;
+
+    public Bizum (String telefono){
+        super();
+        this.telefono=telefono;
+        Random random = new Random();
+        this.pin = random.nextInt(900000) + 100000;
+        System.out.println(pin);
+    }
+    public boolean validarBizum() {
+        boolean valido = true;
+
+        if (!telefono.matches("\\d+")) {
+            System.out.println("Solo se admiten 9 números.");
+            valido = false;
+        }
+        if (telefono.length() != 9){
+            System.out.println("Solo se admiten 9 números.");
+            valido = false;
+        }
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Introduce tu PIN: ");
+        int pinIntroducido = teclado.nextInt();
+
+        if (pinIntroducido != this.pin){
+            System.out.println("El PIN introducido es incorrecto.");
+            valido = false;
+
+        }
+        if (valido){
+            System.out.println("Validando tarjeta...");
+        }
+
+        return valido;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+    @Override
+    public String toString() {
+        return "Bizum{" +
+                "telefono='" + telefono + '\'' +
+                ", pin=" + pin +
+                '}';
+    }
+
+    @Override
+    public void procesarPago(double importe) {
+        System.out.println("Procesando pago de " + importe +  "€ con tarjeta de crédito Bizum");
+    }
+}
+
+```
+</details>
+
+ [Comprobación]()
+
 #### Clase `Tienda`
 ```java
 
@@ -421,10 +595,15 @@ TarjetaCredito PayPal   Bizum
 
    ### 5.1. Ejemplo de funcionamiento.
    
-   #### 1.Comprobacion clase TarjetaCredito: Creamos dos tarjetas una con errores (tarjeta con letras y mas de 16 digitos, y tipo tarjeta no valido) y otra tarjeta correcta.
+   #### 1. Comprobacion clase TarjetaCredito: Creamos dos tarjetas una con errores (tarjeta con letras y mas de 16 digitos, y tipo tarjeta no valido) y otra tarjeta correcta.
    ![Pruebas Tarjeta de Credito](./img/prueba_validarTarjeta.png)
-   #### 2. Comprobamos la clase PAyPal; Creamos dos cuentas una sin el arroba y con saldo insuficiente y otra con "@" y saldo suficiente.
+   
+   #### 2. Comprobamos la clase PayPal; Creamos dos cuentas una sin el arroba y con saldo insuficiente y otra con "@" y saldo suficiente.
    ![Pruebas PayPal](./img/prueba_validarPayPal.png)
+
+   #### 3. Comprobamos la clase Bizum: Creamos dos cuenras una con menos de 9 digitos para el telefono e introducimos mal el pin y la otra correcta.
+  ![Pruebas PayPal](./img/prueba_validarBizum.png)
+  
    ### 5.2. Pruebas final feliz.
 ---
 ## 6. Documentación JavaDoc

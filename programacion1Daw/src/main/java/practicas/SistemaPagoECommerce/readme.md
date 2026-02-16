@@ -59,38 +59,32 @@ La práctica persigue los siguientes objetivos:
 
 ### 3.1. Estructura de clases
 
-En esta practica se desarrolla clase por clase, lo primero que hacemos es crear la clase main 'AppEcommerce' para ir haciendo las comprobaciones del codigo y a continuación seguiriamos con el orden que marca el pdf creando cada clase y sus metodos.
+En esta práctica se desarrolla el código clase por clase. Lo primero que hacemos es crear la clase principal 'AppEcommerce' para realizar las comprobaciones y, a continuación, seguimos el orden marcado en el PDF, creando cada clase con sus respectivos métodos.
 
 ![Clases](./img/clases.jpg)
 
 ---
 #### Clase `AppEcommerce`
-Creamos la clase AppProgramas, unicamente con el main e iremos completandola para las pruebas.
 ```java
 
 ```
 #### Clase `MetodoPago`
-Creamos la clase AppProgramas, unicamente con el main e iremos completandola para las pruebas.
 ```java
 
 ```
 #### Clase `TarjetaCredito`
-Creamos la clase AppProgramas, unicamente con el main e iremos completandola para las pruebas.
 ```java
 
 ```
 #### Clase `PayPal`
-Creamos la clase AppProgramas, unicamente con el main e iremos completandola para las pruebas.
 ```java
 
 ```
 #### Clase `Bizum`
-Creamos la clase AppProgramas, unicamente con el main e iremos completandola para las pruebas.
 ```java
 
 ```
 #### Clase `Tienda`
-Creamos la clase AppProgramas, unicamente con el main e iremos completandola para las pruebas.
 ```java
 
 ```

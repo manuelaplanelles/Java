@@ -37,7 +37,7 @@ El presente documento recoge el desarrollo de la práctica número 1 de la asign
 
 El contexto de la práctica se centra en el desarrollo de un sistema de pagos para una tienda online de cursos de programación. La tienda debe aceptar diferentes métodos de pago (tarjeta de crédito, PayPal y Bizum), cada uno con su propia forma de procesar el pago, pero todos compartiendo la misma funcionalidad básica.
 
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -54,7 +54,7 @@ La práctica persigue los siguientes objetivos:
 - Generar valores aleatorios (PIN de Bizum) de forma automática.
 - Modularizar el código en métodos auxiliares para mantener el código organizado.
 
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -768,7 +768,7 @@ public class Tienda {
 
 Las pruebas de esta clase se realizan con [las pruebas finales](#52-pruebas-finales)
 
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -801,7 +801,7 @@ TarjetaCredito PayPal   Bizum
 
 - **Abstracción**: La clase MetodoPago define el comportamiento común (procesarPago) sin implementar los detalles, que quedan en manos de las subclases.
 
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -873,7 +873,7 @@ Incorrecto:
 ![Pruebas Bizum incorrecto](./img/prueba_metodoBizumIncorrecto.png)
 
 
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -913,7 +913,7 @@ public abstract class MetodoPago {
 
   ![JavaDoc](./img/javadoc.png)
   
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -998,7 +998,7 @@ package practicas.SistemaPagoECommerce {
 
 </details>
 
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -1020,6 +1020,6 @@ Esta práctica me ha ayudado a comprender la utilidad real de la herencia y el p
 
 Honestamente, necesito seguir practicando para conseguir más fluidez y confianza a la hora de estructurar el código, pero me veo mejor que cuando empecé y cada vez entiendo mejor los conceptos de POO.
 
-<p align="left"><a href="#índice">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---

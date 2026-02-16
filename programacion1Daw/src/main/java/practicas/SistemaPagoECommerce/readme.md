@@ -566,10 +566,177 @@ class Bizum extends MetodoPago{
  [Comprobación](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#3-comprobamos-la-clase-bizum-creamos-dos-cuenras-una-con-menos-de-9-digitos-para-el-telefono-e-introducimos-mal-el-pin-y-la-otra-correcta)
 
 #### Clase `Tienda`
-```java
 
+>_""Tendremos otra clase Tienda con un método estático: static void realizarPago(MetodoPago metodo) que pedirá el importe a pagar e invocará al método procesarPago() según el tipo de objeto metodo recibido como parámetro."_
+
+Creamos el metodo static que se soliciita, un print y escanner para leer el importe y llamamos al metodo
+
+```java
+ public static void realizarPago(MetodoPago metodo) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Introduce el importe a pagar: ");
+        double importe = teclado.nextDouble();
+
+        metodo.procesarPago(importe);
+    }
 ```
 
+>_"Además, esta clase tendrá otro método estático iniciarPago(), donde previamente preguntará al usuario qué método de pago quiere usar para crear uno nuevo y realizar todas las validaciones correspondientes (validarTarjeta, validarPayPal, validarBizum) antes de ser procesado._
+
+Creamos metodo de inciarPago, lo entiendo como un menu inciacial por lo que optado para usar el switch para ello, cada case pide por  consola los atributos que necesita y con el if comprobamos lo que entra por teclado con el metodo correspondiente.
+
+
+```java
+public static void iniciarPago() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("¿Qué método de pago quieres usar? [Bizum, Paypal, Tarjeta]: ");
+        String metodo = teclado.nextLine();
+
+        MetodoPago metodoPago = null;
+
+        switch (metodo.toLowerCase()) {
+
+            case "tarjeta":
+                System.out.println("Introduce los datos de tu tarjeta:");
+                String numeroTarjeta = teclado.nextLine();
+
+                System.out.print("Selecciona el tipo de tarjeta [VISA, MAESTRO, MASTERCARD]: ");
+                String tipoTarjeta = teclado.nextLine();
+
+                TarjetaCredito tarjeta = new TarjetaCredito(numeroTarjeta, tipoTarjeta);
+
+                System.out.println("Validando tarjeta...");
+                if (tarjeta.validarTarjeta()) {
+                    metodoPago = tarjeta;
+                }
+                break;
+
+            case "paypal":
+                System.out.print("Introduce tu correo de PayPal: ");
+                String correoPayPal = teclado.nextLine();
+
+                PayPal paypal = new PayPal(correoPayPal);
+
+                System.out.print("Introduce el importe a pagar: ");
+                double importePayPal = teclado.nextDouble();
+
+                System.out.println("Validando PayPal...");
+                if (paypal.validarPayPal(importePayPal)) {
+                    metodoPago = paypal;
+                }
+                break;
+
+            case "bizum":
+                System.out.print("Introduce tu número de teléfono vinculado con Bizum: ");
+                String telefonoBizum = teclado.nextLine();
+
+                Bizum bizum = new Bizum(telefonoBizum);
+
+                System.out.println("Validando Bizum...");
+                if (bizum.validarBizum()) {
+                    metodoPago = bizum;
+                }
+                break;
+
+            default:
+                System.out.println("El método de pago no existe.");
+                return;
+        }
+
+        if (metodoPago != null) {
+            realizarPago(metodoPago);
+        }
+
+    }
+```
+
+<details>
+<summary>Ver el código completo de la clase Tienda</summary>
+
+```java
+
+import java.util.Scanner;
+
+public class Tienda {
+    public static void realizarPago(MetodoPago metodo) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Introduce el importe a pagar: ");
+        double importe = teclado.nextDouble();
+
+        metodo.procesarPago(importe);
+
+        System.out.println("Pago aceptado. Muchas gracias.");
+    }
+
+    public static void iniciarPago() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("¿Qué método de pago quieres usar? [Bizum, Paypal, Tarjeta]: ");
+        String metodo = teclado.nextLine();
+
+        MetodoPago metodoPago = null;
+
+        switch (metodo.toLowerCase()) {
+
+            case "tarjeta":
+                System.out.println("Introduce los datos de tu tarjeta:");
+                String numeroTarjeta = teclado.nextLine();
+
+                System.out.print("Selecciona el tipo de tarjeta [VISA, MAESTRO, MASTERCARD]: ");
+                String tipoTarjeta = teclado.nextLine();
+
+                TarjetaCredito tarjeta = new TarjetaCredito(numeroTarjeta, tipoTarjeta);
+
+                System.out.println("Validando tarjeta...");
+                if (tarjeta.validarTarjeta()) {
+                    metodoPago = tarjeta;
+                }
+                break;
+
+            case "paypal":
+                System.out.print("Introduce tu correo de PayPal: ");
+                String correoPayPal = teclado.nextLine();
+
+                PayPal paypal = new PayPal(correoPayPal);
+
+                System.out.print("Introduce el importe a pagar: ");
+                double importePayPal = teclado.nextDouble();
+
+                System.out.println("Validando PayPal...");
+                if (paypal.validarPayPal(importePayPal)) {
+                    metodoPago = paypal;
+                }
+                break;
+
+            case "bizum":
+                System.out.print("Introduce tu número de teléfono vinculado con Bizum: ");
+                String telefonoBizum = teclado.nextLine();
+
+                Bizum bizum = new Bizum(telefonoBizum);
+
+                System.out.println("Validando Bizum...");
+                if (bizum.validarBizum()) {
+                    metodoPago = bizum;
+                }
+                break;
+
+            default:
+                System.out.println("El método de pago no existe.");
+                return;
+        }
+
+        if (metodoPago != null) {
+            realizarPago(metodoPago);
+        }
+
+    }
+}
+```
+</details>
+
+ Las pruebas de esta clase la realizamos con [las pruebas finales](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#52-pruebas-final-feliz)
+ 
 ---
 ## 4. Relaciones entre clases.
 
@@ -604,7 +771,7 @@ TarjetaCredito PayPal   Bizum
    #### 3. Comprobamos la clase Bizum: Creamos dos cuenras una con menos de 9 digitos para el telefono e introducimos mal el pin y la otra correcta.
   ![Pruebas PayPal](./img/prueba_validarBizum.png)
   
-   ### 5.2. Pruebas final feliz.
+   ### 5.2. Pruebas finales.
 ---
 ## 6. Documentación JavaDoc
 

@@ -245,7 +245,148 @@ class TarjetaCredito extends MetodoPago{
 
  [Comprobación](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#1comprobacion-clase-tarjetacredito-creamos-dos-tarjetas-una-con-errores-tarjeta-con-letras-y-mas-de-16-digitos-y-tipo-tarjeta-no-valido-y-otra-tarjeta-correcta)
 
- 
+#### Clase `PayPal`
+>_"La clase PayPal tendrá los atributos cuenta (String con formato de correo electrónico “xxx@xxx.com”) y saldo (double por defecto 23€)._
+
+Creamos la extension del padre PayPal, con los atributos, constructor, set /get y toString, dejamos marcado por defecto los 23€ dentro del constructor
+```java
+class PayPal extends MetodoPago{
+private String correo;
+private double saldo;
+
+public PayPal(String correo, double saldo ){
+    super();
+    this.correo=correo;
+    this.saldo=23.0;
+}
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "PayPal{" +
+                "correo='" + correo + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
+
+    @Override
+    public void procesarPago(double importe) {
+
+    }
+}
+```
+>_"El método procesarPago() debe imprimir "Procesando pago de [importe] € con PayPal"."_
+
+Talcual se hizo en la clase de tarjeta se sobre escribe el metodo del padre.
+
+```java
+@Override
+    public void procesarPago(double importe) {
+        System.out.println("Procesando pago de " + importe +  "€ con tarjeta de crédito PayPal");
+    }
+```
+>_"En este caso, el método validarPayPal() debe comprobar que el formato del correo electrónico es correcto y que el saldo de la cuenta sea suficiente para realizar el pago correspondiente."_
+
+Repetimos el tipo de clase que con validacionTarjeta, con boolean par la validacion y utilizamos if para el correo validamos que contenga el @ con '.contains' y para el saldo indicamos que si saldo es inferior al importe, que salte el error.
+
+```java
+public boolean validarPayPal(double importe){
+    boolean valido = true;
+    if (!correo.contains("@")){
+        System.out.println("El formato del correo no es correcto.");
+        valido = false;
+    }
+    if (saldo < importe){
+        System.out.println("Saldo insuficiente.");
+        valido = false;
+    }
+    if (valido) {
+        System.out.println("Validando PayPal...");
+    }
+    return valido;
+}
+```
+
+<details>
+<summary>Ver el código completo de la clase PayPal</summary>
+
+```java
+class PayPal extends MetodoPago{
+private String correo;
+private double saldo;
+
+public PayPal(String correo){
+    super();
+    this.correo=correo;
+    this.saldo=23.0;
+}
+
+public boolean validarPayPal(double importe){
+    boolean valido = true;
+    if (!correo.contains("@")){
+        System.out.println("El formato del correo no es correcto.");
+        valido = false;
+    }
+    if (saldo < importe){
+        System.out.println("Saldo insuficiente.");
+        valido = false;
+    }
+    if (valido) {
+        System.out.println("Validando PayPal...");
+    }
+    return valido;
+}
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "PayPal{" +
+                "correo='" + correo + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
+
+    @Override
+    public void procesarPago(double importe) {
+        System.out.println("Procesando pago de " + importe +  "€ con tarjeta de crédito PayPal");
+    }
+}
+
+```
+</details>
+
+ [Comprobación]()
+
 #### Clase `Bizum`
 ```java
 
@@ -282,7 +423,8 @@ TarjetaCredito PayPal   Bizum
    
    #### 1.Comprobacion clase TarjetaCredito: Creamos dos tarjetas una con errores (tarjeta con letras y mas de 16 digitos, y tipo tarjeta no valido) y otra tarjeta correcta.
    ![Pruebas Tarjeta de Credito](./img/prueba_validarTarjeta.png)
-   
+   #### 2. Comprobamos la clase PAyPal; Creamos dos cuentas una sin el arroba y con saldo insuficiente y otra con "@" y saldo suficiente.
+   ![Pruebas PayPal](./img/prueba_validarPayPal.png)
    ### 5.2. Pruebas final feliz.
 ---
 ## 6. Documentación JavaDoc

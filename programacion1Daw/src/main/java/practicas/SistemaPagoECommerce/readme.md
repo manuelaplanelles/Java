@@ -828,25 +828,31 @@ Creamos dos cuentas: una con menos de 9 dígitos para el teléfono e introducimo
 - **Pago con tarjeta:**
 
 Correcto:
+
 ![Pruebas tarjeta correcto](./img/prueba_metodoTarjetaCorrecto.png)
 
 Incorrecto:
+
 ![Pruebas tarjeta incorrecto](./img/prueba_metodoTarjetaIncorrecto.png)
 
 - **Pago con PayPal:**
 
 Correcto:
+
 ![Pruebas PayPal correcto](./img/prueba_metodoPayPalCorrecto.png)
 
 Incorrecto:
+
 ![Pruebas PayPal incorrecto](./img/prueba_metodoPayPalInorrecto.png)
 
 - **Pago con Bizum:**
 
 Correcto:
+
 ![Pruebas Bizum correcto](./img/prueba_metodoBizumCorrecto.png)
 
 Incorrecto:
+
 ![Pruebas Bizum incorrecto](./img/prueba_metodoBizumIncorrecto.png)
 
 ---

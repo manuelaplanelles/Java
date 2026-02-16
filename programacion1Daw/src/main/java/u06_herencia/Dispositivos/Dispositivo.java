@@ -6,7 +6,7 @@ public abstract class Dispositivo {
 
     public abstract void encender();
 
-    
+
     public boolean apagar(){
 
     }

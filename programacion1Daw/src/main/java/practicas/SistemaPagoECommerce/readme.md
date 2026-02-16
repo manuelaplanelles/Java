@@ -243,7 +243,7 @@ class TarjetaCredito extends MetodoPago{
 ```
 </details>
 
- [Comprobación](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#1comprobacion-clase-tarjetacredito-creamos-dos-tarjetas-una-con-errores-tarjeta-con-letras-y-mas-de-16-digitos-y-tipo-tarjeta-no-valido-y-otra-tarjeta-correcta)
+ [Comprobación](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#1-comprobacion-clase-tarjetacredito-creamos-dos-tarjetas-una-con-errores-tarjeta-con-letras-y-mas-de-16-digitos-y-tipo-tarjeta-no-valido-y-otra-tarjeta-correcta)
 
 #### Clase `PayPal`
 >_"La clase PayPal tendrá los atributos cuenta (String con formato de correo electrónico “xxx@xxx.com”) y saldo (double por defecto 23€)._
@@ -485,7 +485,7 @@ public boolean validarBizum() {
 ```
 
 <details>
-<summary>Ver el código completo de la clase PayPal</summary>
+<summary>Ver el código completo de la clase Bizum</summary>
 
 ```java
 import java.util.Random;
@@ -563,7 +563,7 @@ class Bizum extends MetodoPago{
 ```
 </details>
 
- [Comprobación]()
+ [Comprobación](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#3-comprobamos-la-clase-bizum-creamos-dos-cuenras-una-con-menos-de-9-digitos-para-el-telefono-e-introducimos-mal-el-pin-y-la-otra-correcta)
 
 #### Clase `Tienda`
 ```java

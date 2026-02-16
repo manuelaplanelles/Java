@@ -17,7 +17,7 @@
      - [3.1.1. Clase `AppEcommerce`](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#clase-appecommerce)
      - [3.1.2. Clase `MetodoPago`](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#clase-tarjetacredito)
      - [3.1.3. Clase `TarjetaCredito`](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#clase-tarjetacredito)
-     - [3.1.4. Clase `PayPal`]()
+     - [3.1.4. Clase `PayPal`](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#clase-paypal)
      - [3.1.5. Clase `Bizum`](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#clase-bizum)
      - [3.1.6. Clase `Tienda`](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#clase-tienda)
 4. [Relaciones entre clases](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#4-relaciones-entre-clases)
@@ -385,7 +385,7 @@ public boolean validarPayPal(double importe){
 ```
 </details>
 
- [Comprobación]()
+ [Comprobación](https://github.com/manuelaplanelles/Java/blob/main/programacion1Daw/src/main/java/practicas/SistemaPagoECommerce/readme.md#2-comprobamos-la-clase-paypal-creamos-dos-cuentas-una-sin-el-arroba-y-con-saldo-insuficiente-y-otra-con--y-saldo-suficiente)
 
 #### Clase `Bizum`
 ```java

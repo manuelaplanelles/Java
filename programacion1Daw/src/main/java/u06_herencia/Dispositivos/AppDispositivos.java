@@ -53,6 +53,7 @@ public class AppDispositivos {
 
         for (Dispositivo dispositivo : listaDispositivo){
             dispositivo.encender();
+            dispositivo.encender();
 
             if(dispositivo instanceof ControlRemoto){
                 ((ControlRemoto) dispositivo).sincronizar();
@@ -61,6 +62,7 @@ public class AppDispositivos {
             }
 
             dispositivo.mostrarEstado();
+            dispositivo.apagar();
             dispositivo.apagar();
         }
     }

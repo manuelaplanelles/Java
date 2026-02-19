@@ -1,4 +1,4 @@
-package miprimerjava;
+package basic;
 
 public class HelloWorldEjercicios {
     //1. Imprime un mensaje que diga tu nombre en lugar de "¡Hola Mundo!"

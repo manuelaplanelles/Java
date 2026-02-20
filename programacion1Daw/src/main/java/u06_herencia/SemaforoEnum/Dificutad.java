@@ -5,11 +5,12 @@ public enum Dificutad {
 
     public final int multiplicador;
 
-    Dificutad(){
-
+    Dificutad(int multiplicador){
+        this.multiplicador = multiplicador;
     }
 
     public static int getMultiplicador(){
+        return getMultiplicador();
 
     }
 }

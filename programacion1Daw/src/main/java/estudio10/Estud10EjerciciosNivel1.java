@@ -1,4 +1,4 @@
-package basic;
+package estudio10;
 
 public class Estud10EjerciciosNivel1 {
     /*

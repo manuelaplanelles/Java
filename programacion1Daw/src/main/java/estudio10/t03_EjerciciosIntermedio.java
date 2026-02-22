@@ -1,6 +1,6 @@
 package estudio10;
 
-public class t03EjerciciosIntermedio {
+public class t03_EjerciciosIntermedio {
     /*
     6. Rotación a la derecha Mueve todos los elementos una posición a la derecha.
     7. Comprobar si es simétrico (palíndromo)

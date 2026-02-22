@@ -1,6 +1,6 @@
 package estudio10;
 
-public class t03EjerciciosAvanzado {
+public class t03_EjerciciosAvanzado {
     /*
     11. Eliminar duplicados (manualmente) Sin utilizar streams.
     12. Eliminar duplicados (.distinct()) Versión corta usando:

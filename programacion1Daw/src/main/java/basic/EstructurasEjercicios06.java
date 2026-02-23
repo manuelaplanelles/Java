@@ -127,7 +127,7 @@ public class EstructurasEjercicios06 {
         */
 
 
-        
+
         /*Añade 4 valores al ArrayList y elimina uno a continuación.
         ArrayList<String> nom =new ArrayList<String>();
         System.out.println(nom.size());

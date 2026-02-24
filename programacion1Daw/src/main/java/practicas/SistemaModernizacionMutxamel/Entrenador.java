@@ -19,7 +19,6 @@ public class Entrenador extends MutxamelFC implements AccionesDeportivas{
 
 
 
-
     public Equipos getEquipos() {
         return equipos;
     }
@@ -33,31 +32,35 @@ public class Entrenador extends MutxamelFC implements AccionesDeportivas{
     }
 
     public void setFormacionPreferida(String formacionPreferida) {
+        if(!formacionPreferida.matches("\\d-\\d-\\d")){
+            throw new ControlformacionPreferida();
+        }
         this.formacionPreferida = formacionPreferida;
+
     }
 
     @Override
     public void entrenar() {
-
+        System.out.println( this.nombre + " esta entrenando con " + equipos);
     }
 
     @Override
     public void jugarPartido(String rival) {
-
+        System.out.println( this.nombre + "convoba partido para el fin de semana.");
     }
 
     @Override
     public void concentrarse() {
-        System.out.println(nombre + " se esta concentrando.");
+        System.out.println(this.nombre + " esta concentrado con " + equipos);
     }
 
     @Override
     public void viajar(String ciudad) {
-        System.out.println(nombre + " viaja a " + ciudad);
+        System.out.println(this.nombre + " viaja a con " + equipos + " a " + ciudad);
     }
 
     @Override
     public void celebrarGol() {
-        System.out.println(nombre + " grita ¡GOOOL!");
+        System.out.println(this.nombre + " corre por la bana gritando ¡GOOOL!");
     }
 }

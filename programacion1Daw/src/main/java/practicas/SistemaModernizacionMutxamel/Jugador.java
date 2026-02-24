@@ -1,16 +1,21 @@
 package practicas.SistemaModernizacionMutxamel;
 
+import java.util.ArrayList;
+
 public class Jugador extends MutxamelFC implements AccionesDeportivas{
     private Equipos categoria;
     private int dorsal;
     private Posiciones posiciones;
 
-    public Jugador(String nombre, int edad, Equipos categoria, int dorsal, Posiciones posiciones){
+    public Jugador(String nombre, int edad, Equipos categoria, int dorsal, Posiciones posiciones, ArrayList<Jugador> listaJugadores){
         super(nombre, edad);
         this.categoria=categoria;
-        this.dorsal=dorsal;
         this.posiciones=posiciones;
+        setDorsal(dorsal, listaJugadores);
+
     }
+
+
     public void calentar(){
         System.out.println(this.nombre + " esta calentando para salir al campo.");
     }
@@ -18,7 +23,7 @@ public class Jugador extends MutxamelFC implements AccionesDeportivas{
         System.out.println(this.nombre + "le toca descansar este partido.");
     }
     public void marcarGol(){
-        System.out.println(this.nombre + " levanata los brazos y grita ¡GOOOLL!");
+        System.out.println(this.nombre + " levanta los brazos y grita ¡GOOOLL!");
     }
 
 
@@ -30,13 +35,21 @@ public class Jugador extends MutxamelFC implements AccionesDeportivas{
     public void setPosiciones(Posiciones posiciones) {
         this.posiciones = posiciones;
     }
-
     public int getDorsal() {
+
         return dorsal;
     }
+    //Si se intenta crear o modificar a un jugador en un mismo equipo con un dorsal que ya tiene asignado otro jugador.
 
-    public void setDorsal(int dorsal) {
+    public void setDorsal(int dorsal, ArrayList<Jugador> listaJugadores) {
+        for (Jugador jugador : listaJugadores){
+            if (dorsal == jugador.getDorsal() && jugador.getCategoria().equals(categoria)){
+                throw new ControlDorsal();
+            }
+        }
+
         this.dorsal = dorsal;
+        listaJugadores.add(this);
     }
 
     public Equipos getCategoria() {

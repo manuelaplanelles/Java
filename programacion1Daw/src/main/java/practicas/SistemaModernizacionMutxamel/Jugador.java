@@ -42,12 +42,12 @@ public class Jugador extends MutxamelFC implements AccionesDeportivas{
     //Si se intenta crear o modificar a un jugador en un mismo equipo con un dorsal que ya tiene asignado otro jugador.
 
     public void setDorsal(int dorsal, ArrayList<Jugador> listaJugadores) {
+
         for (Jugador jugador : listaJugadores){
             if (dorsal == jugador.getDorsal() && jugador.getCategoria().equals(categoria)){
                 throw new ControlDorsal();
             }
         }
-
         this.dorsal = dorsal;
         listaJugadores.add(this);
     }

@@ -1,13 +1,15 @@
 package practicas.SistemaModernizacionMutxamel;
 
+import java.util.ArrayList;
+
 public class Entrenador extends MutxamelFC implements AccionesDeportivas{
     private Equipos equipos;
     private String formacionPreferida;
 
-    public Entrenador(String nombre, int edad, Equipos equipos, String formacionPreferida){
+    public Entrenador(String nombre, int edad, Equipos equipos, String formacionPreferida, ArrayList<Entrenador>listaEntrenador){
         super(nombre, edad);
         this.equipos = equipos;
-        this.formacionPreferida=formacionPreferida;
+        setFormacionPreferida(formacionPreferida, listaEntrenador);
     }
 
     public void planificarEntrenamiento(){
@@ -31,12 +33,13 @@ public class Entrenador extends MutxamelFC implements AccionesDeportivas{
         return formacionPreferida;
     }
 
-    public void setFormacionPreferida(String formacionPreferida) {
+    public void setFormacionPreferida(String formacionPreferida, ArrayList<Entrenador>listaEntrenador) {
         if(!formacionPreferida.matches("\\d-\\d-\\d")){
             throw new ControlformacionPreferida();
         }
         this.formacionPreferida = formacionPreferida;
-
+        this.formacionPreferida = formacionPreferida;
+        listaEntrenador.add(this);
     }
 
     @Override

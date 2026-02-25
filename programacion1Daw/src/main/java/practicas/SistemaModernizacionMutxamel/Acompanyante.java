@@ -10,8 +10,9 @@ public class Acompanyante extends MutxamelFC {
          this.parentesco=parentesco;
      }
      public void animarEquipo(){
-
+         System.out.println("¡"+this.parentesco+" de " + integrante + " animando al equipo! ¡VAMOS MUTXAMEL!");
      }
+
 
     public Jugador getIntegrante() {
         return integrante;
@@ -29,19 +30,20 @@ public class Acompanyante extends MutxamelFC {
         this.parentesco = parentesco;
     }
 
+
     @Override
     public void concentrarse() {
-        System.out.println(this.getNombre() + " se esta concentrando.");
+        System.out.println(this.getNombre() + " se ha ido a compañar al equipo a la concentración.");
     }
 
     @Override
     public void viajar(String ciudad) {
-        System.out.println(this.getNombre() + " viaja a " + ciudad);
+        System.out.println( this.getNombre() + " viaja con el equipo a " + ciudad);
     }
 
     @Override
     public void celebrarGol() {
-        System.out.println(this.getNombre() + " grita ¡GOOOL!");
+        System.out.println("¡GOOOOOOOOOOOL! "+ this.getNombre() +" celebra el gol!");
     }
 
 }

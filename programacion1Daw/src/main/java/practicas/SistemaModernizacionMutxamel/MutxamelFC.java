@@ -21,7 +21,7 @@ abstract class MutxamelFC implements FuncionesIntegrantes{
 
     @Override
     public void celebrarGol() {
-        System.out.println(nombre + " grita ¡GOOOL!");
+        System.out.println("¡GOOOOOOOOOOOL! "+ this.nombre +" celebra el gol!");
     }
 
 

@@ -1,8 +1,8 @@
 package practicas.SistemaModernizacionMutxamel;
 
 abstract class MutxamelFC implements FuncionesIntegrantes{
-    public String nombre;
-    public int edad;
+    private String nombre;
+    private int edad;
 
     public MutxamelFC(String nombre, int edad){
         this.nombre=nombre;

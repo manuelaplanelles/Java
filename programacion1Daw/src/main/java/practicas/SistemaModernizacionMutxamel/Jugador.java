@@ -17,13 +17,13 @@ public class Jugador extends MutxamelFC implements AccionesDeportivas{
 
 
     public void calentar(){
-        System.out.println(this.nombre + " esta calentando para salir al campo.");
+        System.out.println(this.getNombre() + " esta calentando para salir al campo.");
     }
     public void descansar(){
-        System.out.println(this.nombre + "le toca descansar este partido.");
+        System.out.println(this.getNombre() + "le toca descansar este partido.");
     }
     public void marcarGol(){
-        System.out.println(this.nombre + " levanta los brazos y grita ¡GOOOLL!");
+        System.out.println(this.getNombre() + " levanta los brazos y grita ¡GOOOLL!");
     }
 
 
@@ -39,6 +39,8 @@ public class Jugador extends MutxamelFC implements AccionesDeportivas{
 
         return dorsal;
     }
+
+
     //Si se intenta crear o modificar a un jugador en un mismo equipo con un dorsal que ya tiene asignado otro jugador.
 
     public void setDorsal(int dorsal, ArrayList<Jugador> listaJugadores) {
@@ -63,25 +65,25 @@ public class Jugador extends MutxamelFC implements AccionesDeportivas{
 
     @Override
     public void entrenar() {
-        System.out.println( this.nombre + "esta entrenando para la posción " + posiciones);
+        System.out.println(this.getNombre() + "esta entrenando para la posción " + this.posiciones);
     }
 
     @Override
     public void jugarPartido(String rival) {
-        System.out.println(this.nombre + " jugara el partido con el dorsal "+ dorsal);
+        System.out.println(this.getNombre() + " jugara el partido con el dorsal "+ this.dorsal);
     }
     @Override
     public void concentrarse() {
-        System.out.println(nombre + " se esta concentrando.");
+        System.out.println(this.getNombre() + " se esta concentrando.");
     }
 
     @Override
     public void viajar(String ciudad) {
-        System.out.println(nombre + " viaja a " + ciudad);
+        System.out.println(this.getNombre() + " viaja a " + ciudad);
     }
 
     @Override
     public void celebrarGol() {
-        System.out.println(nombre + " grita ¡GOOOL!");
+        System.out.println(this.getNombre() + " grita ¡GOOOL!");
     }
 }

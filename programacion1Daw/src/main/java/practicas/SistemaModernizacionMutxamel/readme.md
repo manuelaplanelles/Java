@@ -86,7 +86,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="#índice">Ir al Índice</a></p>>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 

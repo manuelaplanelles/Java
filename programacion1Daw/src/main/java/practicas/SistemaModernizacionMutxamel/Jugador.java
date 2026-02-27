@@ -78,4 +78,10 @@ public class Jugador extends MutxamelFC implements AccionesDeportivas{
         System.out.println("¡GOOOOOOOOOOOL! "+ this.getNombre() +" celebra el gol!");
     }
 
+    @Override
+    public String toString() {
+        return
+        "jugador{ Nombre: "  + getNombre() + ", Edad: " + getEdad() + ", Categoria =" + categoria + ", Dorsal=" + dorsal + ", Posiciones=" + posiciones + "]";
+
+    }
 }

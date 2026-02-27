@@ -34,3 +34,234 @@
 
 ---
 ---
+## 1. Introducción
+
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+## 2. Objetivos de la práctica
+
+La práctica persigue los siguientes objetivos:
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+## 3. Diseño e Implementación del programa
+
+### 3.1. Estructura de clases
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase Enum `Posiciones`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase Enum `Equipos`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase Abstract `MutxamelFC`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase Interface `FuncionesIntegrantes`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase Interface `FuncionesDeportivas`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase `Masajista`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase `Jugador`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase `Acompañante`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase `Entrenador`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase Exception `ControlDorsal`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase Exception `ControlformacionPreferida`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase `AppMutxamelFC`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+
+#### Clase `AppMantenimiento`
+
+<details>
+<summary>Ver el código completo.</summary>
+  
+```java
+```
+</details>
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+---
+
+## 4. Relaciones entre clases
+
+**Jerarquía de herencia:**
+
+**Explicación de las relaciones:**
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+---
+
+## 5. Plan de prueba final feliz
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+---
+
+## 6. Documentación Javadoc
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+---
+
+## 7. Conclusión
+
+<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+
+---
+

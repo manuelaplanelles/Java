@@ -60,7 +60,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -73,7 +73,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -86,7 +86,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>>
 
 ---
 
@@ -99,7 +99,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -112,7 +112,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -125,7 +125,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -138,7 +138,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -151,7 +151,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -164,7 +164,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -177,7 +177,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -190,7 +190,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -203,7 +203,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -216,7 +216,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 
@@ -229,7 +229,7 @@ La práctica persigue los siguientes objetivos:
 ```
 </details>
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 ---
@@ -240,28 +240,28 @@ La práctica persigue los siguientes objetivos:
 
 **Explicación de las relaciones:**
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 ---
 
 ## 5. Plan de prueba final feliz
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 ---
 
 ## 6. Documentación Javadoc
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 ---
 
 ## 7. Conclusión
 
-<p align="right"><a href="(https://github.com/manuelaplanelles/Java/edit/main/programacion1Daw/src/main/java/practicas/SistemaModernizacionMutxamel/readme.md#%C3%ADndice)">Ir al Índice</a></p>
+<p align="right"><a href="#índice">Ir al Índice</a></p>
 
 ---
 

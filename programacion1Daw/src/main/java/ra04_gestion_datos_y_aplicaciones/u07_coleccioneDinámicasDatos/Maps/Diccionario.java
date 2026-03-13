@@ -1,12 +1,11 @@
 package ra04_gestion_datos_y_aplicaciones.u07_coleccioneDinámicasDatos.Maps;
 
-    import java.util.HashMap;
-    import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
-/**
-     * Diccionario Inglés-Español con más de 1000 palabras.
-     * Uso: HashMap<String, String> diccionario = Diccionario.getMap();
-     */
     public class Diccionario {
         static HashMap<String, String> map = new HashMap<>();
         static Scanner teclado = new Scanner(System.in);
@@ -14,19 +13,31 @@ package ra04_gestion_datos_y_aplicaciones.u07_coleccioneDinámicasDatos.Maps;
         public static void main(String[] args) {
 
         }
-        public static void nuevoPar(String español, String inglés){         //no
+
+        public static void nuevoPar(String espanyol, String ingles) {         //no
         }
-        public static void traduce(String español){
-        /*Este método recibirá una palabra en español, la buscará en la
-        propiedad diccionario y devolverá su correspondiente valor en inglés. */
+
+        public static void traduce(String espanyol) {
             System.out.println("Indica la palabra en español que quieres traducir: ");
             String palEsp = teclado.next().toLowerCase();
+            
 
         }
-        public static void palabrasAleatorias(){
+
+        public static void palabrasAleatorias() {
+            List<String> claves = new ArrayList<>(map.keySet());
+            Random random = new Random();
+            String palabra = claves.get(random.nextInt(claves.size()));
+            System.out.println("Palabra aleatoria: " + palabra);
 
         }
-        public static void primeraLetraTraduccion(){
+
+        public static void primeraLetraTraduccion(String espanyol){
+            System.out.println("Indica la palabra en español: ");
+            String palEsp = teclado.next().toLowerCase();
+            String traduccion = map.get(palEsp);
+            String primeraLetra = String.valueOf(traduccion.charAt(0));
+            System.out.println("La primera letra en inglés es: " + primeraLetra);
 
         }
 

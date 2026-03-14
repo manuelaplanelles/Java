@@ -3,6 +3,8 @@
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/programacion1Daw/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/programacion1Daw/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/programacion1Daw/src/test/java" isTestSource="true" />
     </content>
   </component>
 </module>

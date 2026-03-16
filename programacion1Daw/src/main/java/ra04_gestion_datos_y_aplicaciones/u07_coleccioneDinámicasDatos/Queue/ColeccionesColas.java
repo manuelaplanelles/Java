@@ -1,9 +1,8 @@
-package ra04_gestion_datos_y_aplicaciones;
+package ra04_gestion_datos_y_aplicaciones.u07_coleccioneDinámicasDatos.Queue;
 
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class ColeccionesColas {
     public static void main(String[] args) {

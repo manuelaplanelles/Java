@@ -1,4 +1,4 @@
-package ra04_gestion_datos_y_aplicaciones.u07_coleccioneDinámicasDatos;
+package ra04_gestion_datos_y_aplicaciones.u07_coleccioneDinámicasDatos.Set;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;

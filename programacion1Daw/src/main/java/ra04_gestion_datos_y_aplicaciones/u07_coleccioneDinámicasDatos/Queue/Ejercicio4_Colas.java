@@ -1,4 +1,4 @@
-package ra04_gestion_datos_y_aplicaciones.u07_coleccioneDinámicasDatos;
+package ra04_gestion_datos_y_aplicaciones.u07_coleccioneDinámicasDatos.Queue;
 import java.util.LinkedList;
 import java.util.Scanner;
 public class Ejercicio4_Colas {
